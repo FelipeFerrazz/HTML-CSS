@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML 5</title>
+</head>
+<body>
+    <H1>Inserindo videos hospedados localmente</H1>
+        <p>Ete videos esta hospedado no meu proprio servidor </p><!--essa e a primeira maneira de colocar um video mas a outra maneira abaixo e a melhor poque a gente hospeda o videos em todos formatos para que posso abrir em todos os navegadores-->
+        <video src="midias/Meu-Video-mp4.mp4" width="560" controls></video>
+        <br>
+        <br>
+
+        <video width="560" poster="imagens/tamb.jpg" controls auto loop> 
+            <source src="midias/video original.mp4" type="video/mp4">
+            <source src="midias/Meu-Video-mp4.mp4" type="video/mp4">
+            <source src="midias/Meu-Video-webm.webm" type="video/webm">
+
+
+            <p>Seu navegador nao compatibilidade com reproducao de videos.</p>
+
+        </video>
+
+        <h1>Inserindo videos do YouTube</h1> <!--voce pode usar alguns sites para pegar os seus videos como por exemplo o proprio youtube ou o site vimeo que e um otimo site tambem -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/stHbjWx79Dk?si=tCVk3zHvpWyCnmCC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

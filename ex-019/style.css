@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+ EM HTML=ID EM CSS=#--- SO PODE UM ELEMENTO POR PAGINA
+ EM HTML E CLASS EM CSS E (.)---- PODE VARIOS ELEMENTOS
+*/
+body {
+    background-color: rgb(42, 38, 38);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: antiquewhite;
+}
+h1#principal{
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+ h2{
+    color:antiquewhite;
+ }
+
+ p{
+    color:white;
+ }
+
+.basico{
+    color: rgb(22, 164, 38);
+}
+
+.intermediario{
+    color: rgb(233, 255, 38);
+}
+
+.avancado{
+    color: rgb(162, 35, 35);
+}

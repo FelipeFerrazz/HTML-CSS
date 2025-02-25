@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+
+        /*existem dois tipo de boxes ( caixas) um delas e a in-side level e outra a box-level
+        
+        box-level- e quando uma caixa ocupa toda um linha que nao e possivel voce continuar com o conteudo desejado como exemplo (h1&h5 imagens, videos etc )
+
+        inside-level- e um tipo de box que te permite continuar com o conteudo assim que ela termina como exemplo (<links> <p> etc ) 
+
+        MAS ETRETANTO TODA VIA MESMO QUE ESSES SEJAM O PADRAO DESSES DOIS INTEM PODEMOS ALTERA-LOS USANDANDO A TAG --(DISPLAY:BLOCK OU INLINE ) TAMBEM PODEMOS USAR TAG (INLINE-BLOCK) QUE NOS PERMITE USAR ALGUMAS CARACTERISTICAS DO BLOCK VAMOS PODER COLOCAR ALTURA LARGURA E ENTRE OUTROS 
+        
+        QUANDO AUTERMOS UM ITEM QUE BLOCK PARA INLINE OBVIAMENTE NAO PODEMOS USAR AS TAGS HEIGHT E WIDTH POR ELE SER INLINE 
+        
+        */
+
+
+        h1{ /* box type box level*/
+            
+            /* TAMBEM PODEMOS USAR AS FAMOSAS (SHORTHANDS)*/
+
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+           
+           
+            /*border-width:10px;
+            border-style: solid;
+            border-color: darkslategrey;*/
+            border: 10px solid darkslategray;
+           
+           
+            padding-top: 10px;            /*SEMPRE NAS SIMPLIFICACOES O SENTINDO E COMO SE FOSSE UM RELOGIO */
+            padding-right: 10px;              /*SEGUINDO A ORDEM DE---(CIMA, DIREITA, BAIXO, E ESQUERDA)*/
+            padding-bottom: 10px;
+            padding-right: 10px;
+            
+            
+            padding: 10px 10px 10px 10px; 
+             /**NESTE CASO QUANDO AMBOS OS LADOS SAO DO MESMO TAMANHO PODEMOS SIMPLIFICAR USANDO APENAS 
+            (padding: 10px);*/
+            
+             /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+
+            margin: 20px auto 40px auto;
+
+
+            /*outline-width: 5px;            NESTE CASO A ORDEM E-(ESPESSURA, ESTILO, E COR)
+            outline-style: dashed;
+            outline-color: blueviolet;*/
+            
+            outline: 5px dashed blueviolet;
+
+           
+        }
+
+
+
+        a{     /*box type box in-line level*/
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: RED;*/
+
+            border: 10px solid red ; 
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+            
+            padding: 10px 10px 10px 10px;   /*e ou padding:10px*/
+         }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa  box-level</h1>
+    <p>Paragrafos tambem sao exemplo de box-level os <a href="#">links sao exemplos de caixas inline-level</a></p>
+    
+</body>
+</html>
